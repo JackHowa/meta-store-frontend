@@ -1,3 +1,9 @@
+# Meta Store
+
+## CI/CD
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/130e18f7-f149-4b30-b234-6a9ec519e7b4/deploy-status)](https://app.netlify.com/sites/nostalgic-jones-e88a96/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
