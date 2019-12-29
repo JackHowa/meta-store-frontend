@@ -4,9 +4,9 @@ Shop online for online shops
 
 # Setup 
 
-`npm install`
+`yarn install`
 
-`npm run dev`
+`yarn run dev`
 
 Go to localhost:8080
 
