@@ -28,12 +28,12 @@
     "prettier": "^1.16.1"
   },
   "scripts": {
-    "clear-build-cache": "rm -rf .cache/ dist/",
+    "clear-build-cache": "rm -rf .cache/ build/",
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html"
+    "build": "parcel build --out-dir build src/index.html"
   }
 }
