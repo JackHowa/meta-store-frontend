@@ -86,5 +86,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### Technology Used
 
 - [Create React App](https://create-react-app.dev/) setup
-- [linaria](https://github.com/callstack/linaria) CSS in JS library
 - [koa](https://koajs.com/) Node server back-end in a private repo
