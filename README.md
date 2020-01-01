@@ -2,6 +2,10 @@
 
 Shop online for online shops.
 
+## CI/CD
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/130e18f7-f149-4b30-b234-6a9ec519e7b4/deploy-status)](https://app.netlify.com/sites/nostalgic-jones-e88a96/deploys)
+
 ## Motivation
 
 This app is for someone looking for an online store based on category, credibility, and other costs. It's also for users who want to recommend stores based on their expertise to people new to a category.
