@@ -48,12 +48,20 @@ shoes
 - Start dev server `yarn dev`
 - Open [http://localhost:8080](http://localhost:8080) in a browser
 
+## Code Quality
+
+- `yarn lint` to use linting setup, with airbnb styles
+- `yarn format` to apply prettier styles
+
 ### Technology Used
 
 - [React](https://github.com/facebook/react)
 - [webpack](https://webpack.js.org/) build tools
 - [koa](https://koajs.com/) Node server back-end in a private repo
+- [prettier](https://github.com/prettier/prettier)
+- [eslint](https://github.com/eslint/eslint)
 
-# Credit 
+# Credit
 
-Setup with webpack and babel based off of [tutorial](https://dev.to/iamismile/how-to-setup-webpack-and-babel-for-react-59ph).
+- Setup with webpack and babel based off of [tutorial](https://dev.to/iamismile/how-to-setup-webpack-and-babel-for-react-59ph).
+- Setup with prettier and eslint based off of Brian Holt's brilliant [FrontendMasters React course](https://btholt.github.io/complete-intro-to-react-v5/)
