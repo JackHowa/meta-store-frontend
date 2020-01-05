@@ -2,14 +2,14 @@ import { CREATE_SITE } from '../actions/siteActions';
 
 const defaultSiteData = {
   entities: {},
-  uuids: [],
+  ids: [],
 };
 const sitesReducer = (sites = defaultSiteData, action) => {
   if (action.type === CREATE_SITE) {
-    const { site, siteUUID } = action.payload;
+    const { site, siteID } = action.payload;
     return {
-      entities: { ...sites.entities, [siteUUID]: site },
-      uuids: [...sites.uuids, siteUUID],
+      entities: { ...sites.entities, [siteID]: site },
+      ids: [...sites.ids, siteID],
     };
   }
 
