@@ -1,4 +1,5 @@
 import { schema, normalize } from 'normalizr';
+import defaultState from './defaultState.json';
 
 // defining sites that have many categories
 // through siteCategories
@@ -8,17 +9,17 @@ const site = new schema.Entity('sites', {
 });
 
 // preexisting data coming in
-const normalizedSites = normalize({}, [site]);
-const normalizedCategories = normalize({}, [category]);
+const normalizedSites = normalize(defaultState.sites, [site]);
+const normalizedCategories = normalize(defaultState.categories, [category]);
 
 export const sites = {
   entities: normalizedSites.entities.sites,
-  uuids: normalizedSites.result,
+  ids: normalizedSites.result,
 };
 
 export const categories = {
   entities: normalizedCategories.entities.categories,
-  uuids: normalizedCategories.result,
+  ids: normalizedCategories.result,
 };
 
 export default {
