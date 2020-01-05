@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import SiteList from './SiteList';
-import SiteInput from './SiteInput';
+import React from 'react';
+import { SiteListContainer, SiteCreationContainer } from '../containers';
 
 export default function ListManager() {
-  const [siteIds, setSiteIds] = useState(['22', '33']);
-
   return (
     <>
-      <SiteList siteIds={siteIds} />
-      <SiteInput handleSubmit={id => setSiteIds(siteIds.concat(id))} />
+      <SiteListContainer />
+      <SiteCreationContainer />
     </>
   );
 }
