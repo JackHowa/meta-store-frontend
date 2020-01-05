@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import SiteList from '../components/SiteList';
 
 const mapStateToProps = state => {
-  return { siteUUIDs: state.sites.uuids };
+  return { siteIDs: state.sites.ids };
 };
 
 export default connect(mapStateToProps)(SiteList);

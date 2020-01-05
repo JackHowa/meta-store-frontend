@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import CATEGORIES from '../constants/CATEGORIES';
 
-export default function SiteInput({ createSite }) {
+export default function SiteInput({
+  createSite,
+  categoryEntities,
+  categoryIDs,
+}) {
   const [newSiteName, setNewSiteName] = useState('');
   const [selectedCategoryIds, setSelectedCategoryIds] = useState([]);
 
@@ -19,25 +22,30 @@ export default function SiteInput({ createSite }) {
         value={newSiteName}
         onChange={e => setNewSiteName(e.target.value)}
       />
-      {CATEGORIES.uuids.map(uuid => {
-        const targetCategory = CATEGORIES.entities[uuid];
+      {categoryIDs.map(id => {
+        const targetCategory = categoryEntities[id];
 
         return (
-          <label key={uuid} htmlFor={uuid}>
+          <label key={id} htmlFor={id}>
             {targetCategory.displayName}
 
             <input
               type="checkbox"
-              id={uuid}
-              checked={selectedCategoryIds.includes(uuid)}
-              // todo: think this is bad practice
-              onChange={() =>
-                setSelectedCategoryIds(selectedCategoryIds.concat(uuid))
-              }
+              id={id}
+              checked={selectedCategoryIds.includes(id)}
+              // todo: refactor to ensure this isn't reruning on render
+              onChange={e => {
+                if (e.target.checked) {
+                  setSelectedCategoryIds(selectedCategoryIds.concat(id));
+                } else {
+                  // uncheck category
+                }
+              }}
             />
           </label>
         );
       })}
+      <button type="submit">Add</button>
     </form>
   );
 }

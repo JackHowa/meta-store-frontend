@@ -1,10 +1,9 @@
 import React from 'react';
 import SiteListItemContainer from '../containers/SiteListItemContainer';
 
-export default function SiteList({ siteUUIDs }) {
-  // hook up getting display name from here
-  const items = siteUUIDs.map(siteUUID => (
-    <SiteListItemContainer key={siteUUID} siteUUID={siteUUID} />
+export default function SiteList({ siteIDs }) {
+  const items = siteIDs.map(siteID => (
+    <SiteListItemContainer key={siteID} siteID={siteID} />
   ));
 
   return (
