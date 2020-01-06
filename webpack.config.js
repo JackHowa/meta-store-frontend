@@ -6,20 +6,24 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.resolve('./build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
-    ]
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
   },
   optimization: {
     // via https://stackoverflow.com/questions/49053215/webpack-4-how-to-configure-minimize
@@ -31,7 +35,7 @@ module.exports = {
       // injects bundle.js to our new index.html
       inject: true,
       // copys the content of the existing index.html to the new /build index.html
-      template:  path.resolve('./index.html'),
+      template: path.resolve('./index.html'),
     }),
-  ]
+  ],
 };

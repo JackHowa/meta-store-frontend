@@ -1,0 +1,16 @@
+{
+	"sites": [],
+	"categories": [{
+			"id": "hjadkjfh",
+			"displayName": "Hiking"
+		},
+		{
+			"id": "kajfjjdkj",
+			"displayName": "Running"
+		},
+		{
+			"id": "jdkfjkdjf",
+			"displayName": "Books"
+		}
+	]
+}
