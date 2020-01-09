@@ -57,9 +57,10 @@ shoes
 
 - [React](https://github.com/facebook/react)
 - [webpack](https://webpack.js.org/) build tools
-- [koa](https://koajs.com/) Node server back-end in a private repo
 - [prettier](https://github.com/prettier/prettier)
 - [eslint](https://github.com/eslint/eslint)
+- [linaria](https://github.com/callstack/linaria) CSS in JS with zero runtime
+- [koa](https://koajs.com/) Node server back-end [repo](https://github.com/mattzuzolo/meta-store-back)
 
 # Credit
 
