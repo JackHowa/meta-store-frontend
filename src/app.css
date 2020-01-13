@@ -1,25 +1,17 @@
 html,
 body {
-	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1.4em;
-	background: #282c35;
-	color: #ffffffe0;
-	min-width: 230px;
-	max-width: 550px;
-	margin: 0 auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-weight: 300;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #282c35;
+  color: #ffffffe0;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
 }
 
 :focus {
-	outline: 0;
+  outline: 0;
 }
-
-/*
-basic style guide
-https: //material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=282c35&secondary.color=d2d8d9&primary.text.color=ffffff&secondary.text.color=000000;
-primary: 282c35 dark blue;
-seconary: d2d8d9 greenish grey;
-highlight: ffa7c4 light pink;
-white: ffffffe0 off white */
