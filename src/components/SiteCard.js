@@ -1,14 +1,15 @@
 import React from 'react';
+import { CardStyles } from '../styles';
 
 export default function SiteCard({ displayName, categoryNames = [] }) {
   return (
-    <li>
+    <CardStyles>
       {displayName}
       <ul>
         {categoryNames.map(categoryName => (
           <li>{categoryName}</li>
         ))}
       </ul>
-    </li>
+    </CardStyles>
   );
 }
