@@ -1,5 +1,5 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -53,9 +53,8 @@ module.exports = {
     contentBase: path.join(__dirname, 'public'),
   },
   optimization: {
-    // via https://stackoverflow.com/questions/49053215/webpack-4-how-to-configure-minimize
-    minimizer: [new UglifyJsPlugin()],
-    noEmitOnErrors: true,
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
   plugins: [
     // via https://www.netlify.com/blog/2017/11/30/starting-with-webpack-from-scratch/
